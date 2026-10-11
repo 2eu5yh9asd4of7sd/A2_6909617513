@@ -4,33 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Mesa | Portfolio</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="bg-dark">
-        <div class="container-custom">
-            <div class="menu py-3">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="logo text-light">
-                            <h4>Portfolio</h4>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#home">
+                Portfolio<span class="text-primary">.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-9 col-xl-8">
+                    <p class="text-primary fw-semibold mb-3">
+                        PORTFOLIO WEBSITE · FIRST YEAR
+                    </p>
+
+                    <h1 class="hero-title mb-4">
+                        Hi, I am <span class="text-primary">Mesa</span>
+                        <br>
+                        Witchuwatsarapakdee
+                    </h1>
+
+                    <p class="hero-description mb-4">
+                        Computer Science Student
+                        <span class="text-secondary">|</span>
+                        Learning, Building, Growing.
+                    </p>
+
+                    <a href="#about" class="btn btn-primary btn-lg rounded-pill px-4">
+                        Get Started <span aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="#portfolio" class="btn btn-outline-light btn-lg rounded-pill px-4 ms-2">
+                        My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-heading mb-5">
+                <p class="text-primary fw-semibold mb-2">GET TO KNOW ME</p>
+                <h2 class="display-5 fw-bold">About Me<span class="text-primary">.</span></h2>
+                <p class="text-secondary">
+                    A little introduction about who I am.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+
+                <div class="col-12 col-md-7">
+                    <div class="profile-card h-100">
+                        <h3 class="h4 fw-bold mb-4">Personal Information</h3>
+
+                        <div class="profile-item">
+                            <span>Name</span>
+                            <strong>Mesa Witchuwatsarapakdee</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span>Student ID</span>
+                            <strong>6909617513</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span>Major</span>
+                            <strong>Computer Science</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span>University</span>
+                            <strong>Thammasat University, Rangsit</strong>
+                        </div>
+
+                        <div class="mt-4">
+                            <span class="badge text-bg-primary me-1">HTML</span>
+                            <span class="badge text-bg-primary me-1">CSS</span>
+                            <span class="badge text-bg-primary">bootstrap</span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <ul class="d-flex gap-4 list-unstyled text-light">
-                            <li><a href="#" class="text-light ms-2 text-decoration-none">Home</a></li>
-                            <li><a href="#" class="text-light ms-2 text-decoration-none">About</a></li>
-                            <li><a href="#" class="text-light ms-2 text-decoration-none">Port</a></li>
-                            <li><a href="#Contract " class="text-light ms-2 text-decoration-none">Contract</a></li>
-                        </ul>
+                </div>
+
+
+                <div class="col-12 col-md-5">
+                    <div class="profile-image-wrapper h-100">
+                        <img src="media/me.JPG" class="profile-image" alt="Portrait of Mesa">
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </section>
+
+
+    <section id="portfolio" class="section-padding portfolio-section">
+        <div class="container">
+            <div class="section-heading mb-5">
+                <p class="text-primary fw-semibold mb-2">MY JOURNEY</p>
+                <h2 class="display-5 fw-bold">
+                    My Portfolio<span class="text-primary">.</span>
+                </h2>
+                <p class="text-secondary">
+                    Projects and learning experiences that help me grow.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6">
+                    <article class="project-card h-100">
+                        <div class="project-number">PROJECT 01</div>
+
+                        <h3 class="h4 fw-bold mt-3">
+                            CS100 Assignment 1
+                        </h3>
+
+                        <p class="text-secondary">
+                            Course Assignment · August 30, 2026
+                        </p>
+
+                        <hr>
+
+                        <div class="project-detail">
+                            <strong>Role</strong>
+                            <p>Individual Developer</p>
+                        </div>
+
+                        <div class="project-detail">
+                            <strong>Description</strong>
+                            <p>
+                                Developed a Learning Portfolio website
+                                using HTML and CSS.
+                            </p>
+                        </div>
+
+                        <div class="project-detail">
+                            <strong>Skills</strong>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">Semantic HTML</span>
+                            </div>
+                        </div>
+
+                        <div class="project-detail">
+                            <strong>Reflection</strong>
+                            <p>
+                                Practiced building a website from scratch
+                                and learned how HTML and CSS work together
+                                to structure and style web pages.
+                            </p>
+                        </div>
+
+                        <a href="https://drive.google.com/drive/folders/1jmvOcv7QN9czSSqiWL_4tELbUVq8QY7T?usp=sharing"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill mt-3">
+                            View Evidence →
+                        </a>
+                    </article>
+                </div>
+
+
+                <div class="col-12 col-md-6">
+                    <article class="project-card h-100">
+                        <div class="project-number">LEARNING 02</div>
+
+                        <h3 class="h4 fw-bold mt-3">
+                            Learning python
+                        </h3>
+
+                        <p class="text-secondary">
+                            Self Learning · Ongoing
+                        </p>
+
+                        <hr>
+
+                        <div class="project-detail">
+                            <strong>Role</strong>
+                            <p>Student / Self Learner</p>
+                        </div>
+
+                        <div class="project-detail">
+                            <strong>Description</strong>
+                            <p>
+                                Learning python syntax
+                            </p>
+                        </div>
+
+                        <div class="project-detail">
+                            <strong>Skills</strong>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="skill-tag">python</span>
+                                <span class="skill-tag">basic syntax</span>
+                            </div>
+                        </div>
+
+                        <div class="project-detail">
+                            <strong>Reflection</strong>
+                            <p>
+                                Developing new programming skills and
+                                exploring how python can improve
+                                projects for my university courses and
+                                personal learning goals.
+                            </p>
+                        </div>
+
+                        <a
+                            href="https://drive.google.com/drive/folders/13IiUAMyhn-jdE3_6Gj647uEcw7IInlaS?usp=sharing">Evidence</a>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-12 col-md-7">
+                    <p class="text-primary fw-semibold mb-2">GET IN TOUCH</p>
+                    <h2 class="h3 fw-bold">Let's connect.</h2>
+                    <p class="text-secondary mb-md-0">
+                        Thank you for visiting my portfolio.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-5 text-md-end">
+                    <p class="mb-2">
+                        <span class="text-secondary">Phone</span>
+                        <a href="tel:0625851984" class="contact-link">
+                            062-585-1984
+                        </a>
+                    </p>
+
+                    <a href="#home" class="contact-link">
+                        Back to top ↑
+                    </a>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <p class="small text-secondary mb-0">
+                Mesa Witchuwatsarapakdee · Personal Portfolio
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
